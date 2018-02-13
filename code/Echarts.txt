@@ -1,0 +1,136 @@
+option = {
+    title : {
+        text: 'Cost of Data Breach in Different Industries',
+        
+        x:'center'
+    },
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        x : 'center',
+        y : 'bottom',
+        data:[]
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {
+                show: true, 
+                type: ['pie', 'funnel']
+            },
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    series : [
+       
+        {
+            name:'面积模式',
+            type:'pie',
+            radius : [30, 110],
+            center : ['50%', 200],
+            roseType : 'area',
+            x: '50%',               // for funnel
+            max: 40,                // for funnel
+            sort : 'ascending',     // for funnel
+            data:[
+               
+                {value:7, name:'Public, 7%'},
+                {value:5, name:'Transportation, 5%'},
+                {value:5, name:'Consumer,5%'},
+                {value:5, name:'Energy, 5%'},
+                {value:4, name:'Hospitality, 4%'},
+                {value:4, name:'Life science, 4%'},
+                {value:2, name:'Communications, 2%'},
+                {value:1, name:'Media, 1%'},
+               {value:1, name:'Health, 1%'},
+                {value:1, name:'Education, 1%'},
+                {value:0.5, name:'Research, <1%'},
+                {value:0.5, name:'Entertainment, <1%'},
+                {value:15, name:'Financial, 15%'},
+                {value:15, name:'Industrial, 15%'},
+                {value:14, name:'Services, 14%'},
+                {value:12, name:'Technology, 12%'},
+                {value:8, name:'Retail, 8%'},
+            ]
+        }
+    ]
+};
+
+
+
+
+option = {
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+  grid:{
+  width:800,
+   x:140,
+    y:60
+  },
+       legend: {
+        data:['Demographics',  'Family & Health','Property', 'Activities','Consumer']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'value'
+        }
+    ],
+     yAxis : [
+        {
+            type : 'category',
+            data : ['Colledge \n Undergraduate','Teenager','Middle-aged  \nEmployee','Chief Officer','Senior citizen','House Wife']
+        }],
+   series : [
+       
+        {
+            name:'Demographics',
+            type:'bar',
+          barWidth : 40,
+            stack: '广告',
+            data:[0.1356,    0.0651,    0.4669,    1.0425,    0.9104,    0.5568]
+        },
+        {
+            name:'Family & Health',
+            type:'bar',
+            stack: '广告',
+            data:[ 0.0969,    0.0431,    0.2815,    0.8827,    1.0702,    0.5378]
+        },
+        {
+            name:'Property',
+            type:'bar',
+            stack: '广告',
+            data:[ 0.1094,    0.0533,    0.3974,    0.9204,    0.8979,    0.5227]
+        },
+         {
+            name:'Activities',
+            type:'bar',
+            stack: '广告',
+            data:[   0.1323,   0.0649,   0.4260,   0.8079,   0.4983,    0.3827]
+         },
+        {
+            name:'Consumer',
+            type:'bar',
+            stack: '广告',
+            data:[  0.1052,   0.0492,   0.2325,    0.4993,    0.3271,    0.2415] },
+       
+    ]
+};
+                    
+                    

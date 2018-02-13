@@ -1,0 +1,8 @@
+Group,  Demographics ,Family & Health , Property ,  Activities , Consumer 
+Colledge Undergraduate,0.0221, 0.0710, 0.0909, 0.2528, 0.8333
+Teenager, 0.0221, 0.0237, 0.0909, 0.1124, 0.4327
+Middle-aged Employee, 0.5899, 0.5444, 0.9091, 0.5478, 0.5994
+Chief Officer, 1.0000, 0.6213, 0.9091, 1.0000, 1.0000
+Senior citizen, 0.6404, 1.0000, 1.0000, 0.2247, 0.2853
+House Wife, 0.3691, 0.4260, 0.9091, 0.4073, 0.3814
+
